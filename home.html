@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 a{
   text-decoration: none;
@@ -55,12 +56,16 @@ b{
   font-size:130%;
 }
 ul{
+  list-style-type: square;
+}
+ol{
  background-color: white;
  padding: 0;
  overflow: hidden;
- list-style-type:none;
+ list-style-type: none;
  margin: 0;
  top:0;
+ position: fixed;
 }
 li a, .dropbtn{
  display: block;
@@ -109,56 +114,95 @@ p{
 </head>
 <body>
 
-  <ul>
-      <li class="dropdown">
-        <a href = "javescript:void(0)" class="dropbtn"><i class="material-icons" style="font-size:16px;">person</i>About</a>
-        <div class="dropdown-content">
-          <a href="home.html"> Education</a>
-          <a href="home.html">Technical Skills</a>
-     </div>
-     </li>
-    <li><a href="home.html"><i class="material-icons" style="font-size:16px;">computer</i> Technical Projects</a></li>
-    <li><a href="home.html"><i class="fas fa-users-cog"></i> Engineering Student Teams</a></li>
-    <li class="dropdown">
-      <a href = "javescript:void(0)" class="dropbtn"><i class="fas fa-network-wired"></i> Other Expirence</a>
-      <div class="dropdown-content">
-        <a href="home.html"> Work Expirence</a>
-        <a href="home.html">Volunteer Expirence </a>
-        <a href="home.html">Awards and Certificates </a>
-        <a href="hobies.html"> Hobbies</a>
+<div class = "w3-top">
+  <div class="w3-bar w3-white">
+     <li class="dropdown">
+
+       <a href = "javescript:void(0)" class="dropbtn"><i class="material-icons" style="font-size:16px;">person</i>About</a>
+
+       <div class="dropdown-content">
+
+         <a href="#Education"> Education</a>
+
+         <a href="#technicalskills">Technical Skills</a>
+
     </div>
+
     </li>
 
-    <li><a href="madisonwebsite.html"><i class="material-icons" style="font-size:16px;">book</i>Relivent Courses</a></li>
-  </ul>
+   <li><a href="#projects"><i class="material-icons" style="font-size:16px;">computer</i> Technical Projects</a></li>
+
+   <li><a href="#designteam"><i class="fas fa-users-cog"></i> Engineering Student Teams</a></li>
+
+   <li class="dropdown">
+
+     <a href = "javescript:void(0)" class="dropbtn"><i class="fas fa-network-wired"></i> Other Expirence</a>
+
+     <div class="dropdown-content">
+
+       <a href="#work"> Work Expirence</a>
+
+       <a href="#Volunteer">Volunteer Expirence </a>
+
+       <a href="#awards">Awards and Certificates </a>
+
+   </div>
+
+   </li>
+
+   <li><a href="#courses"><i class="material-icons" style="font-size:16px;">book</i>Relivent Courses</a></li>
+</div>
 </div>
 
-
+<br>
+<br>
+<br>
+<div class="w3-container w3-sand">
 <div class="w3-container">
 <h2 style="text-align:center; color:#367588"><b>Madison Maurice</b> <br></h2>
 <p style="text-align:center"> Electrical Engineering Student at the University of British Columbia
 <br> Biomedical Option, Minor of Commerce</p>
 </div>
 
-<div class="w3-container">
-<p style="text-align:center; color:#367588; font-size:18px"><b>About Me:</b></p>
+<div class="w3-container" id="About">
+<p style="text-align:center; color:#367588; font-size:20px"><b>About Me:</b></p>
 <p><img src="madison.jpg" alt="madi" width="150" height="200">I am a third year electrical engineering student in the biomedical stream at the Univeristy of British Columbia. The main reason I chose electrical engingeering was
 because of how versatile it is. I am interested in aviation or the biomedical industry. I am very creative and have a passion for designing new things.
-I am also pursing a minor in commerce to strengthen my degree. I enjoy hiking, knitting, traveling, doing sudoko puzzles and half-marathon running!</p>
+I am also pursing a minor in commerce as I feel the two professions are connected and one day I want to work for a company. I enjoy hiking, knitting, traveling, doing sudoko puzzles and half-marathon running!</p>
 </div>
 <br>
 <br>
 <br>
 <br>
-<br>
+</div>
 
+
+<div class="w3-container" id="Education">
 <div class="w3-container">
-<p style="text-align:center; color:#367588; font-size:18px"><b>Technical Skills:</b></p>
+<p style="text-align:center; color:#367588; font-size:20px"><b>Education:</b></p>
+<hr class="course">
+<p>  <img src="ubclogo.png" alt="ubc" width="50" height="60">
+</div>
+  <b>University of British Columbia</b>, Expected Graduation May 2022<br>
+Bachelor of Applied Science - Electrical Engineering, Biomedical Option<br>
+Minor in Commerce
+</p>
+<div class="w3-container">
+<p>  <img src="sydlogo.png" alt="usyd" width="50" height="60"></div><b>University of Sydney</b> 	 February 2020 – June 2020<br>
+Electrical Engineering, Coordinated International Experience
+</p>
+<br>
+</div>
+
+
+<div class="w3-container w3-sand" id="technicalskills">
+<p style="text-align:center; color:#367588; font-size:20px"><b>Technical Skills:</b></p>
+<hr class="course">
 <table style="margin-left:auto;margin-right:auto">
   <p style="align:center">
   <tr>
     <th>Hardware</th>
-    <th>Compter</th>
+    <th>Languages</th>
     <th>Programs</th>
   </tr>
   <tr>
@@ -201,129 +245,133 @@ I am also pursing a minor in commerce to strengthen my degree. I enjoy hiking, k
 </div>
 <br>
 
+<div class="w3-container" id="projects">
+<p style="text-align:center; color:#367588; font-size:20px"><b>Technical Projects:</b></p>
+<hr class="course">
 <div class="w3-container">
-<p style="text-align:center; color:#367588; font-size:18"><b>Education:</b></p>
-<p>  <img src="ubclogo.png" alt="ubc" width="50" height="60">
-</div>
-  <b>University of British Columbia</b>, Expected graduation May 2022<br>
-Bachelor of Applied Science - Electrical Engineering, Biomedical Option<br>
-Minor in Commerce
-</p>
-<div class="w3-container">
-<p>  <img src="sydlogo.png" alt="usyd" width="50" height="60"></div><b>University of Sydney</b> 	 February, 2020 – June, 2020<br>
-Coordinated International Experience
-</p>
-<br>
-
-<p style="text-align:center; color:#367588; font-size:18px"><b>Technical Projects:</b></p>
-<div class="w3-container">
-<p><img src="htmlcss.png" alt="de1soc" width="50" height="60"><b>HTML and CSS Blog,</b> Personal Project      April, 2020</p>
+<p><img src="htmlcss.png" alt="de1soc" width="50" height="60"><b>HTML and CSS Blog,</b> Personal Project,     April 2020</p>
 </div>
   <ul>
-    <li>Integrated HTML and CSS to design and create a webpage with multiple links to increase user ability.</li>
+    <li> Integrated HTML and CSS to design and create a webpage with multiple links to increase user ability.</li>
   </ul>
+<br>
 <br>
 
 <div class="w3-container">
-<p> <img src="newsim.JPG" alt="usyd" width="50" height="60"><b>Controls Project,</b> University of British Columbia			         October, 2019 – November, 2019</p>
+<p> <img src="new sim.jpg" alt="usyd" width="50" height="60"><b>Controls Project,</b> University of British Columbia,			         October 2019 – November 2019</p>
 </div>
 <p>
   <ul>
-    <li>In a pair, combined MATLAB, SimulationX and Simulink to design a control system to move a robotic arm along a predetermined path. </li>
-    <li>Combining electrical and mechanical properties to correctly position a robotic arm utilizing PID control and kinematics to reduce error. </li>
+    <li> Integrated MATLAB, SimulationX and Simulink to design a control system to move a robotic arm along a predetermined path. </li>
+    <li> Combined electrical and mechanical properties to correctly position a robotic arm utilizing PID control and kinematics to reduce error.  </li>
+    <li>  Received a final mark of 95%. </li>
   </ul>
 </p>
 <br>
 
 <div class="w3-container">
-<p><img src="linda.jpg" alt="linda" width="50" height="60"><b>Autonomous Robot,</b> University of British Columbia	    May, 2019 – June, 2019</p>
+<p><img src="linda.jpg" alt="linda" width="50" height="60"><b>Autonomous Robot,</b> University of British Columbia,	    May 2019 – June 2019</p>
 </div>
 <p>
   <ul>
-    <li style=" list-style-type:square;">Delegated tasks to design, prototype, build, and research an autonomous robot to perform a set of commands with an Arduino.</li>
-    <li style=" list-style-type:square;">Programed multiple sensors in C to command a robot to follow a line, detect objects, sort materials, and dispose an object of a certain material into a corresponding coloured bin.</li>
+    <li> Worked in a leadership role to design, prototype, build, and research an autonomous robot to perform a set of commands with an Arduino. </li>
+    <li>Programmed multiple sensors in C to command a robot to follow a line, detect objects, sorts materials, and dispose an object of a certain material into a corresponding coloured bin. </li>
   </ul>
 </p>
 <br>
 
 <div class="w3-container">
-<p><img src="hatch.jpg" alt="hatch" width="50" height="60"><b>Prosthetic Sensor, </b>Hackathon   March, 2019</p>
+<p><img src="hatch.jpg" alt="hatch" width="50" height="60"><b>Prosthetic Sensor, </b>Hackathon,   March 2019</p>
 </div>
 <p>
   <ul>
-    <li>Collaborating and leading a group of 7 students from different disciplines to design a network of sensors positioned on a hand, applying vibrations to an upper arm when pressure is sensed.<li>
-    <li>Researching current problems in biomedical engineering to implement and present a solution for individuals to regain a modified sense of touch. </li>
+    <li>Researched stakeholder needs in biomedical engineering to implement and present a solution for individuals to regain a modified sense of touch. <li>
+    <li> Led a group of 7 interdisciplinary students to design a network of sensors positioned on a hand, applying vibrations to an upper arm when pressure is sensed to simulate touch.  </li>
   </ul>
 </p>
 <br>
 
 <div class="w3-container">
-<p><img src="de1soc.jpg" alt="de1soc" width="50" height="60"><b>Reduced Instruction Set Computer,</b> University of British Columbia	October, 2018 – October, 2018</p>
+<p><img src="de1soc.jpg" alt="de1soc" width="50" height="60"><b>Reduced Instruction Set Computer,</b> University of British Columbia,	October 2018 – October 2018</p>
 </div>
 <p>
   <ul>
-    <li>Working with a partner using Quartus and ModelSim to integrate a finite state machine and instruction decoding to preform simple mathematical operations.</li>
-    <li>Delegating tasks to add memory in order to store and hold instruction and finally adding branching with Verilog. </li>
+    <li>Used ModelSim and Quartus to design, implement and debug the integration of a finite state machine and instruction decoding to perform simple mathematical operations. </li>
+    <li>Worked to add memory in order to store and hold instruction and finally adding branching with Verilog.  </li>
   </ul>
 </p>
+</div>
 <br>
 
-<p style="text-align:center; color:#367588; font-size:18px"><b>Engineering Student Teams:</b></p>
-<div class="w3-container">
-<p><img src="sobbots.png" alt="subbots" width="50" height="60"><b>Subbots,</b> University of British Columbia			           	        January, 2019 – September, 2019
+<div class="w3-container w3-sand" id="designteam">
+<p style="text-align:center; color:#367588; font-size:20px"><b>Engineering Student Teams:</b></p>
+<hr class="course">
+<p><img src="sobbots.png" alt="subbots" width="50" height="60"><b>Subbots,</b> University of British Columbia	,		           	        January 2019 – September 2019
 Electrical sub team</p>
-</div>
   <ul>
-    <li>Design, prototype, and test electrical hardware components of an autonomous submarine to ensure efficiency and accuracy with a multimeter and function generator. </li>
-    <li>Analyzed thruster systems, battery monitor circuits, and sensors to checks for leaks and water pressure with Arduino and oscilloscopes. </li>
+    <li>Designed, prototyped, and tested electrical hardware components of an autonomous submarine to ensure efficiency and accuracy with a multimeter and function generator.   </li>
+    <li> Analyzed thruster systems, battery monitor circuits, and sensors to check for leaks and water pressure with Arduino and oscilloscopes.   </li>
   </ul>
 <br>
+</div>
 
-<p style="text-align:center; color:#367588; font-size:18px"><b>Other Work Expirence:</b></p>
+<div class="w3-container" id="work">
+<p style="text-align:center; color:#367588; font-size:20px"><b>Other Work Expirence:</b></p>
+<hr class="course">
 <div class="w3-container">
-<p><img src="porch.png" alt="porch" width="50" height="60"><b>AMS Porch,</b> Vancouver, BC	May, 2019 – December, 2019</p>
+<p><img src="porch.png" alt="porch" width="50" height="60"><b>AMS Porch,</b> Vancouver, BC,	May 2019 – December 2019</p>
 </div>
   <ul>
-      <li>Prepared and served detailed meals to customers while keeping an orderly and clean workstation.</li>
-        <li>Assisted customers, taking payments and interacting with other staff members to unsure health standards were met.</li>
+      <li>Prepared and served detailed meals to customers while keeping an orderly and clean workstation. </li>
+      <li> Assisted customers, took payments, and interacted with other staff members to ensure health standards were met. </li>
 </ul>
   </ul>
   <br>
   <div class="w3-container">
-<p><img src="sobeys.png" alt="sobeys" width="50" height="60"><b>Sobeys Inc, </b>Winnipeg, MB	    June, 2017/2018 – August, 2017/2018</p>
+<p><img src="sobeys.png" alt="sobeys" width="50" height="60"><b>Sobeys Inc, </b>Winnipeg, MB,	    June 2017/2018 – August 2017/2018</p>
 </div>
   <ul>
-      <li>Managed taking orders, answering phone calls and communicating with other workers to ensure customers are satisfied. </li>
-      <li>Trained new staff on procedures and rules to maintain a safe and efficient workplace.</li>
+      <li> Managed taking orders, answering phone calls and communicating with other workers to ensure customers are satisfied.   </li>
+      <li>Trained new staff on procedures and rules to maintain a safe and efficient workplace. </li>
   </ul>
+</div>
 <br>
 
-<p style="text-align:center; color:#367588; font-size:18px"><b>Volunteer Expirence:</b></p>
+<div class="w3-container w3-sand" id="Volunteer">
+<p style="text-align:center; color:#367588; font-size:20px"><b>Volunteer Expirence:</b></p>
+<hr class="course">
 <div class="w3-container">
-<p> <img src="mhc-logo.png" alt="mhc-logo" width="100" height="60"><b>Misericordia Hospital,</b> Winnipeg, MB January, 2016 – August, 2017</p>
+<p> <img src="mhc-logo.png" alt="mhc-logo" width="100" height="60"><b>Misericordia Hospital,</b> Winnipeg, MB, January 2016 – August 2017</p>
 </div>
   <ul>
-    <li>In a group of 2, delivered water to elderly patients weekly, gaining experience in a hospital setting.</li>
-    <li>Socializing and interacting with patient’s, providing company while improving flexibility and listening skills. </li>
+    <li>Worked with a partner to carry out a range of tasks such as delivering water to elderly patients weekly while gaining experience in a hospital setting. </li>
+    <li> Socialized and interacted with patient’s, providing company while improving empathy and listening skills.   </li>
   </ul>
 <br>
 
 <div class="w3-container">
-<p><img src="orientation.jpg" alt="orientation" width="50" height="60"><b>Orientation Leader,</b>   August, 2018/2019 – September, 2018/2019</p>
+<p><img src="orientation.jpg" alt="orientation" width="50" height="60"><b>Orientation Leader,</b>   August 2018/2019 – September 2018/2019</p>
 </div>
   <ul>
-    <li>Mentored 10 new students by assisting with transition from high school to university, answering questions and giving advice.</li>
+    <li> Mentored 10 new students by assisting with transition from high school to university, answering questions, and giving advice. </li>
   </ul>
 <br>
+</div>
 
-  <p style="text-align:center; color:#367588; font-size:18px"><b>Awards and Certificates:</b></p>
-<ul>
-  <li>The Great Hatch Hackathon 2019 UBC Faculty of Applied Science Award 2019</li>
-  <li>The Great Hatch Hackathon 2019 Second Place Overall 2019</li>
-  <li>WHMIS Certification	2019</li>
-</ul>
+<div class="w3-container" id="awards">
+  <p style="text-align:center; color:#367588; font-size:20px"><b>Awards and Certificates:</b></p>
+<hr class="course">
+<p>
+  <ul>
+    <li>  WHMIS Certification 2019  </li>
+    <li> The Great Hatch Hackathon 2019 UBC Faculty of Applied Science Award</li>
+    <li> THe Great Hatch Hackathon 2019 Second Place Overall  </li>
+  </ul>
+</div>
 <br>
-<p style="text-align:center; color:#367588; font-size:18px"><b>Relevant Courses:</b></p>
+
+<div class="w3-container w3-sand" id="courses">
+<p style="text-align:center; color:#367588; font-size:20px"><b>Relivent Courses:</b></p>
 
 <p><b>APSC 160</b><br><hr class="course">
 Analysis and simulation, laboratory data acquisition and processing, measurement interfaces, engineering tools, computer systems organization, programming languages.  </p>
@@ -370,9 +418,12 @@ small signal models and frequency response. Output stages and power amplifers cl
 <p><b>COMM 457</b><br><hr class="course">
 Financial accounting for business organization, forms of business organization, interperting financial statements including cash flow, income statement and statement of financial position. </p>
 
+<footer class="w3-container w3-center w3-padding-2 w3-sand" style="color:#367588">
+  <p>Contact me </p>
+   <a href="https://www.linkedin.com/in/madison-maurice-a22993189/"><i class="fa fa-linkedin w3-hover-opacity"></i>
+      <a href="https://github.com/madisonmaurice/Madison-Maurice"><i class="fa fa-github w3-hover-opacity"></i>
+</footer>
 
-<hr />
-<p style="text-align:center"><a href="https://www.linkedin.com/in/madison-maurice-a22993189/"> LinkedIn |  <a href="https://github.com/madisonmaurice/Madison-Maurice"> GitHub</p>
-
+</div>
 </body>
 </html>
